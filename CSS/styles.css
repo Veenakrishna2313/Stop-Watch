@@ -12,20 +12,85 @@ body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  }
-
-h1 {
-  font-size: 5rem;
 }
 
-span{
-  font-size: 4rem;
-}
 
 .container{
  display: flex;
  flex-direction: column;
- height: 70vh;
+ width:100%;
+ height: 100vh;
  align-items: center;
  justify-content: center;
+ background-color: rgb(0, 61, 0);
+ text-align: center;
+  }
+
+
+ h1 {
+   color: rgb(10, 238, 10);
+   text-align: center;
  }
+
+ .clock_dial{
+  display: flex;
+  flex-direction: row;
+ }
+
+
+ .digit {
+    width:15rem;
+    height:15rem;
+   font-size: 10rem;
+    color: #fff;
+    margin: 1rem;
+   
+ }
+
+ .txt {
+   font-size: 2rem;
+   color: #fffcd6;
+   align-self: center;
+  
+ }
+
+ .media{
+  margin-top: 5rem;
+ }
+
+ .btn{
+  width:10rem;
+  padding:1.5rem 2rem ;
+  border: none;
+  border-radius: 10%;
+  margin:0 3rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  color: rgb(61, 58, 58);
+
+  }
+
+#play {
+  background-color: #027a62;
+}
+
+#play:hover{
+  background-color: #35ac92;
+}
+  
+#stop {
+  background-color: #0859a9;
+}
+
+#stop:hover {
+  background-color: #3496f7;
+}
+
+#reset {
+  background-color: #911406;
+}
+
+#reset:hover {
+  background-color: #c94334;
+}
